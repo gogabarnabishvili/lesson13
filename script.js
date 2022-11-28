@@ -39,7 +39,8 @@ if (Object.keys(stolenItems).length) {
     }
 } else {
     console.log("Lucky you!")
-}
+};
+const arr1 = [3, 6, 12, 36];
 // exe 5
 // A factor chain is an array where each previous element is a factor of the next consecutive element. The following is a factor chain:
 // [3, 6, 12, 36]
@@ -51,7 +52,15 @@ if (Object.keys(stolenItems).length) {
 // exe 6
 const arr7 = ["###", "#*#", "###"];
 // write JS code that logs true if an asterisk * is inside a box, and false otherwise.
-
+for (let i = 0; i < arr7.length; i++) {
+    for (let i2 = 0; i2 < arr7[0].length; i2++) {
+        if (arr7[i][i2] === "*") {
+            console.log("true")
+        } else {
+            console.log("false")
+        }
+    }
+}
 // exe 7
 const mean7 = 12345;
 // write JS code that logs the mean of all digits.
