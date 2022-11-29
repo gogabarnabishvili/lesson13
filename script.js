@@ -21,7 +21,11 @@ console.log(filterArr2);
 const arr4 = [2, 7, 4, 9, 6, 1, 6, 3];
 // An array is special if every even index contains an even number and every odd index contains an odd number.
 // Log true if an array is special, and false otherwise.
-
+if (arr4.every((el, index) => el % 2 === index % 2)) {
+    console.log(true)
+} else {
+    console.log(false)
+};
 // exe 4
 const stolenItems = {
     tv: 30,
@@ -40,7 +44,8 @@ if (Object.keys(stolenItems).length) {
 } else {
     console.log("Lucky you!")
 };
-const arr1 = [3, 6, 12, 36];
+
+
 // exe 5
 // A factor chain is an array where each previous element is a factor of the next consecutive element. The following is a factor chain:
 // [3, 6, 12, 36]
@@ -48,6 +53,29 @@ const arr1 = [3, 6, 12, 36];
 // 6 is a factor of 12
 // 12 is a factor of 36
 // write JS code that determines whether or not an array is a factor chain.
+const arr1 = [3, 6, 12, 36];
+
+for (let i = 0; i < arr1.length - 1; i++) {
+    if (arr1[i + 1] % arr1[i] === 0) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+
+// arr1.forEach(isChain);
+// function isChain() {
+
+//     let i = 0
+//     let chain = arr1[i + 1] % arr1[i] == 0;
+//     if (chain) {
+//         console.log(true)
+//     } else {
+//         console.log(false)
+//     }
+// }
+
+
 
 // exe 6
 const arr7 = ["###", "#*#", "###"];
@@ -61,6 +89,9 @@ for (let i = 0; i < arr7.length; i++) {
         }
     }
 }
+
+
+
 // exe 7
 const mean7 = 12345;
 // write JS code that logs the mean of all digits.
