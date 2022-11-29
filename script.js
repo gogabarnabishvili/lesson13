@@ -14,6 +14,7 @@ for (let i = 0; i < arr2.length; i++) {
         console.log("even numbers", arr2[i])
     }
 };
+// ან
 const filterArr2 = arr2.filter((value) => value % 2 === 0);
 console.log(filterArr2);
 
@@ -55,15 +56,6 @@ if (Object.keys(stolenItems).length) {
 // write JS code that determines whether or not an array is a factor chain.
 const arr = [3, 6, 12, 36];
 
-// for (let i = 0; i < arr1.length - 1; i++) {
-//     if (arr1[i + 1] % arr1[i] === 0) {
-//         console.log(true)
-//     } else {
-//         console.log(false)
-//     }
-// }
-
-
 for (var i = 0; i < arr.length - 1; i++) {
     if (arr[i + 1] % arr[i] === 0) {
         console.log(true);
@@ -71,20 +63,6 @@ for (var i = 0; i < arr.length - 1; i++) {
         console.log(false)
     }
 }
-
-
-// arr1.forEach(isChain);
-// function isChain() {
-
-//     let i = 0
-//     let chain = arr1[i + 1] % arr1[i] == 0;
-//     if (chain) {
-//         console.log(true)
-//     } else {
-//         console.log(false)
-//     }
-// }
-
 
 
 // exe 6
